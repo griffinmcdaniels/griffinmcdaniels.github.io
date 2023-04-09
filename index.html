@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page title and SEO meta tags -->
+    <title>Griffin McDaniels</title>
+    <meta name="description" content="Personal academic website for Griffin McDaniels">
+    <meta name="description" content="The natural history and functional ecology of ectotherms, particularly reptiles and amphibians, are key to understanding an ecosystem's response to a changing climate.">
+    <meta name="keywords" content="Griffin, McDaniels, Griffin M., Griffin Major, Griffin M. McDaniels, Griffin Major McDaniels, Research, Biology, Bio, Herpetology, Reptiles, Amphibians, Conservation" />
+
+    <!--Required meta tags for Bootstrap5-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Adding link to font awesome and academicons icons CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <!--Link to Bootstrap v5.3 CSS and JS CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Link to Google Fonts stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Link to custom stylesheet-->
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="header" id="header"> 
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <div class="brand">
+            <img class="headshot" 
+            src="assets/images/my_face.png" 
+            alt="A headshot photo of Griffin" 
+            width="75" 
+            height="75" 
+            class="d-inline-block">
+            <div class="brand">
+              <ul>
+                <li class="griffin">Griffin McDaniels</li>
+                <hr>
+                <li class="biologist">Biologist</li>
+              </ul>	
+            </div>
+          </div>
+          
+          <button class="navbar-toggler collapsed d-flex d-md-none flex-column justify-content-around" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNavAltMarkup" 
+          aria-controls="navbarNavAltMarkup" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+          </button> <!-- button class 'collapsed' gives animated hamburder menu on viewport size medium-->
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- ms-auto pushes nav items to the right -->
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#research">Research</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#outreach">Outreach</a></li>
+            <li class="nav-item"><a class="nav-link" href="timeline.html">CV</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+          </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+    
+    <div class="banner">
+      <img src="/assets/images/gutolineatta_1200.png">
+    </div>
+
+    <section class="about">
+      <div class="slideshow">
+        <img class="mySlides img-fluid float-left-lg" src="assets/images/griff_research1.jpg">
+        <img class="mySlides img-fluid float-left-lg" src="assets/images/griff_ophisaurus.jpg">
+        <img class="mySlides img-fluid float-left-lg" src="assets/images/griff_slider.jpg">
+        <img class="mySlides img-fluid float-left-lg" src="assets/images/griff_snapper.jpg">
+        <img class="mySlides img-fluid float-left-lg" src="assets/images/griff_tortoise.jpg">
+
+        <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 10000); // Change image every 2 seconds
+                    }
+        </script> 
+      </div>
+
+      <h2>About me</h2>
+      <hr>
+
+      <p>I am an ecologist and herpetologist interested in linking applied and quantitative ecology to conservation issues and in communicating these issues to the public. I was born and raised in Alabama (a.k.a., home of <a href="https://www.al.com/projects/americas-amazon/")>North America's Amazon</a>) where I developed a great appreciation for its diverse flora and fauna and its breathtaking landscapes. While going to school there (twice, B.S. Zoology at Auburn University and M.S. Biology at Jacksonville State University), I also discovered a deep fondness for southeastern herpetofauna in particular. Outside of work, I like to spend as much time outdoors as I can hiking, fishing, birding, and practicing amateur photography. At home, I have a family made up of a wife (and partner in science), two cats, and a ball python.</p>
+
+      <h2 style="text-align: center" id="research">Research</h2>
+      <hr>
+
+      <p>My MS research focused on the reproductive ecology of the winter-breeding spotted salamander and the role of <i>Oophila amblystomatis</i>, the symbiotic algae found in its eggs. I attempted to answer whether the algae seen in the eggs comes from the environment or the maternal reproductive tract and when this transfer occurs. In sampling salamander egg masses throughout the developmental process across two years and from several wetlands, we confirmed very early stage eggs both with and without algae DNA. We also showed that the vast majority of egg masses contain the algae at earlier stages and that the transfer likely happens within the first few days following egg laying. This project allowed me to experience every step of the research process and showed me the value of good planning and research notes.</p>
+        
+      <p>My current research interests are rooted in natural history and response to environmental change. An understanding of a species' role in the biota and its interactions across a landscape is crucial to forming the framework on which conservation decisions are made. Additionally, as the landscape changes, we can use this fundamental ecological picture to model and attempt to predict the responses of the biota driven by these changes. Quantifying these responses and looking for patterns often requires the use of 'big data’ analytical methods like modeling or bioinformatics. A broad geographic assessment of environmental niche or a historical estimate of movement through genetic data can be important tools for conservation of threatened species.</p>
+      
+      <p>Ectotherms are both excellent model systems for these studies and important indicators because their physiology is coupled to their environments and thus sensitive to small changes. In the face of anthropogenically driven environmental change, this makes groups like reptiles and amphibians both bellwether taxa and taxa of conservation concern. </p>
+
+      <h2 id="outreach">Outreach</h2>
+      <hr>
+
+      <div class="quotes">
+        <figure>
+          <blockquote>
+             <p>In the end we will conserve only what we love; we will love only what we understand; and we will understand only what we have been taught.</p>
+           </blockquote>
+            <figcaption>-Baba Dioum, 1968</figcaption>
+        </figure>
+        <figure>
+          <blockquote>
+            <p>Education is all about being excited about something. Seeing passion and enthusiasm helps push an educational message.</p>
+          </blockquote>
+          <figcaption>-Steve Irwin</figcaption>
+        </figure>
+        </div>
+  
+        <p>
+        Educational outreach outside of the traditional classroom setting is, I think, an underappreciated conservation tool. Not only is bringing ambassador animals to a public event at a state park and seeing young eyes light up incedably rewarding, but it has reaching effects. Enthusiasm is often contagious and those who experience reptiles and amphibians in a positive light are more likely to stop to safely move a turtle or snake out of the road instead of the alternative.
+        </p>
+  
+        <!-- Two column images -->
+        <div class="row text-center">
+            <div class="col">
+                <figure>
+                    <img src="assets/images/young_me.jpg" style="width:75%">
+                    <figcaption>Me, ca. 1990s</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <figure>
+                    <img src="assets/images/outreach4.jpg" style="width:75%">
+                    <figcaption>Me, ca. 2016</figcaption>
+                </figure>
+            </div>
+        </div>
+  
+        <p>
+        I started participating in outreach programs at Auburn University in 2015 and later that year served as outreach assistant for the Alabama Natural Heritage Program. At Jackonville State University, I was mentored by someone whose greatest joy was introducing people to reptiles and amphibians and fostering their appreciation. I participated in more than thirty events during my time with George Cline, firmly solidifying my love for educational outreach. 
+        </p>
+
+    </section>
+
+    <footer class="footer-container">
+      <div class="footer" id="footer">
+        <ul class="social-icon">
+                <li class="social-icon_item"><a
+                  class="social-icon_link btn btn-link btn-floating btn-lg text-light m-1"
+                  href="mailto:griffmcd@uark.edu"
+                  role="button"
+                  data-mdb-ripple-color="light"
+                  ><i class="fa fa-envelope"></i>
+                </a></li>
+                <li class="social-icon_item"><a
+                  class="social-icon_link btn btn-link btn-floating btn-lg text-light m-1"
+                  href="https://scholar.google.com/citations?user=dac7OWQAAAAJ&hl=en"
+                  role="button"
+                  data-mdb-ripple-color="light"
+                  ><i class="ai ai-google-scholar"></i>
+                </a></li>
+                <li class="social-icon_item"><a
+                  class="social-icon_link btn btn-link btn-floating btn-lg text-light m-1"
+                  href="https://www.researchgate.net/profile/Griffin-Mcdaniels"
+                  role="button"
+                  data-mdb-ripple-color="light"
+                  ><i class="ai ai-researchgate"></i>
+                </a></li>
+                <li class="social-icon_item"><a
+                  class="social-icon_link btn btn-link btn-floating btn-lg text-light m-1"
+                  href="https://github.com/griffinmcdaniels"
+                  role="button"
+                  data-mdb-ripple-color="light"
+                  ><i class="fa fa-github"></i>
+                </a></li>
+                <li class="social-icon_item"><a
+                  class="social-icon_link btn btn-link btn-floating btn-lg text-light m-1"
+                  href="https://twitter.com/griffmcd"
+                  role="button"
+                  data-mdb-ripple-color="light"
+                  ><i class="fa fa-twitter"></i>
+                </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu_link" href="index.html">About</a></li>
+          <li class="menu__item"><a class="menu_link" href="index.html#research">Research</a></li>
+          <li class="menu__item"><a class="menu_link" href="index.html#outreach">Outreach</a></li>
+          <li class="menu__item"><a class="menu_link" href="timeline.html">CV</a></li>
+          <li class="menu__item"><a class="menu_link" href="#">Top of Page</a></li>
+        </ul>
+        <p>&copy;2023 Griffin McDaniels</p>
+        <p>This is my personal research website and all views reflected therin are wholely my own.</p>
+        </div>
+    </footer>
+
+  </body>
+</html>
+
