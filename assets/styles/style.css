@@ -387,6 +387,11 @@ hr {
     margin: 1em;
 }
 
+.refs {
+    margin: 0.5em, 0, 0, 1em;
+    font-size: 12pt;
+}
+
 /* ------- Start block quote styling (Outreach page) ------- */
 .quotes {
     display: flex;
@@ -467,6 +472,17 @@ blockquote p::after {
     display: inline-block;
     transition: 0.5s;
 }
+
+@media (max-width:524px){
+    .social-icon_link{
+        font-size: 1rem;
+    }
+
+    .menu_link{
+        font-size: 0.8rem;
+    }
+} 
+
 .social-icon_link:hover {
     transform: translateY(-10px);
 }
