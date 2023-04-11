@@ -389,7 +389,7 @@ hr {
 
 .refs {
     margin: 0.5em, 0, 0, 1em;
-    font-size: 12pt;
+    font-size: 12pt !important;
 }
 
 /* ------- Start block quote styling (Outreach page) ------- */
