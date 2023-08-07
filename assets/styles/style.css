@@ -6,7 +6,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -17,18 +17,18 @@ body {
 }
 
 p {
-    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    font-size: clamp(1rem, 1vw, 1rem);
     font-family: "Roboto", sans-serif;
 }
 
 h2 {
-    font-size: clamp();
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
     font-family:"Roboto Slab", serif;
 }
 
 hr {
     max-width: 1200px;
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 /* ----- Navbar ----- */
@@ -43,7 +43,7 @@ hr {
 }
 
 .brand hr {
-    width: 150px;
+    width: 165px;
     margin-left: 8px;
 }
 
@@ -206,8 +206,8 @@ hr {
 }
 
 .mySlides {
-    max-width: 350px;
-    margin-right: 1em;
+    max-width: 250px;
+    margin-right: 1.5em;
 }
   
 @media (max-width: 769px) {
@@ -232,7 +232,8 @@ hr {
 }
 
 .research h2{
-    margin: 1em
+    margin: 0em;
+    text-align: center;
 }
 
 .research {
@@ -240,6 +241,10 @@ hr {
     color:white;
     margin: 1em;
     padding: 1em 2em 1em 2em;
+}
+
+.outreach-header {
+    margin-top: 2em;
 }
 
 /* ---- CV Timeline ---- */
@@ -373,7 +378,7 @@ hr {
 }
 
 .mindmap {
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
